@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Musings of That Drone Guy">
+    <title>Drone Engineering Blog</title>
+</head>
+<body>
+
+    <!-- Blog top level info -->
+    <h1>Drone Engineering Blog</h1>
+    <h2>Build. Fly. Crash. Repeat.</h2>
+    <img src="images/scx200.jpg" alt="Image of drone head on on white background" height="400">
+
+    <!-- Author and article title information -->
+    <div class="author">
+        <img src="images/person.png" alt="Missing profile pic image" height="60">
+        <h3>Jansen Hillis</h2>
+        <h4>12/3/2020</h4>
+    </div>
+
+    <!-- Article text -->
+    <p>In 2013, I decided, on a whim, to buy a toy quadcopter and see what all the fuss was about.
+        A few days later, my first toy drone arrived - a Walkera Ladybird v2. 
+    </p>
+
+    <p> This particular toy was barebones. Nothing special, just a few parts, and it came preassembled:
+    <ul>
+        <li>A basic flight controller board</li>
+        <li>4x tiny brushed motors</li>
+        <li>4x tiny orange and black propellors</li>
+        <li>1x 3.7V 250mAh Lithium Ion (LiPo) Battery</li>
+        <li>A plastic fuselage shroud (for protection))</li>
+        <li>Extra props and chassis accessories</li>
+    </ul>
+
+    <p> These little toys are excellent to learn on. One thing is for sure, crashing should be expected. 
+        Part of the fun is picking up the pieces, performing repairs, changing the design, and flying again! 
+        Because batteries are still rather a poor energy storage solution for these type of aircraft, a 
+        single flight with these toys might only last 6-8 minutes at a time! I started buying more batteries 
+        to increase the number of flights I could do consecutively. While I was flying one battery, 4 more 
+        were rapidly charging away.
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Size</th>
+                <th>Est. Flight Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Walkera Ladybird v2</td>
+                <td>Toy</td>
+                <td>2" Propellor</td>
+                <th>6-8 Minutes</th>
+            </tr>
+            <tr>
+                <td>Blade Nano QX</td>
+                <td>Toy</td>
+                <td>2" Propellor</td>
+                <th>8-10 Minutes</th>
+            </tr>
+            <tr>
+                <td>Hubsan X4 H107</td>
+                <td>Toy</td>
+                <td>2" Propellor</td>
+                <th>7-8 Minutes</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.jansenhillis.com/projects/scx200">Armattan SCX200</a></td>
+                <td>Racing</td>
+                <td>5" Propellor</td>
+                <th>7-8 Minutes</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.jansenhillis.com/projects/chameleon">Armattan Chamelon Ti</a></td>
+                <td>Racing</td>
+                <td>5" Propellor</td>
+                <th>7-8 Minutes</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.jansenhillis.com/projects/tasmanian">Catalyst Machineworks Tasmanian</a></td>
+                <td>X-Class Racing</td>
+                <td>13" Propellor</td>
+                <th>6-7 Minutes</th>
+            </tr>
+            <tr>
+                <td><a href="https://www.jansenhillis.com/projects/heavylift">Industiral Aerial Service Platform</a></td>
+                <td>Custom Heavy Lift</td>
+                <td>32" Propellor</td>
+                <th>TBD</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Survey Data -->
+    <h3>Quick Survey/Newsletter</h3>
+    <form action="tbd">
+        <!-- Email -->
+        <label for="emailAddress">Email: </label>
+        <input type="text" id="emailAddress">
+        <br>
+
+        <!-- Newsletter choices -->
+        <label for="newsletter">Please choose a newsletter to sign up for</label>
+        <select name="newsletter" id="newsletter">
+            <option value="all">All the emails!</option>
+            <option value="short">Whatever is shortest.</option>
+            <option value="none">None please. K thx bai.</option>
+        </select>
+        <br>
+
+        <!-- Special reward for signing up -->
+        <p>Choose a selection just for you:</p>
+        <input type="radio" id="radioYes" value="yes">  
+        <label for="radioYes">Send me a drone please!</label>
+        <input type="radio" id="radioNo" value="no">  
+        <label for="radioNo">I don't like fun</label>
+        <br>
+
+        <!-- Visted from metrics tracking -->
+        <p>How did you find me?</p>
+        <input type="checkbox" id="online" name="visitedFrom">
+        <label for="online">Online</label>
+        
+        <input type="checkbox" id="snailMail" name="visitedFrom">
+        <label for="snailMail">Snail mail</label>
+
+        <input type="checkbox" id="pigeon" name="vistedFrom">
+        <label for="pigeon">Homing pigeon</label>
+    </form>
+
+    <!-- Submit survey/newsletter data -->
+    <input type="submit" id="submitSurvey">
+
+</body>
+</html>
