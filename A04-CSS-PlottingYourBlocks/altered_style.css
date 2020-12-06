@@ -32,7 +32,7 @@
 
    .subcontents{
     min-height: 200px;
-    width: 200px;
+    width: 210px;
     background-color: yellow;
     display: inline-block;
     margin: 0px 10px 15px 0px;
@@ -40,7 +40,7 @@
    
    #advertisement{
     min-height: 120px;
-    width: 630px;
+    width: 660px;
     background-color: purple;
     margin: 10px 0px;
    }
