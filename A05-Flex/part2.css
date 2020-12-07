@@ -20,7 +20,6 @@ h1 {
     width: 300px;
     text-align: left;
     font-size: x-large;
-    padding: 0px 0px 0px 35px;
     color: #D9E7FB;
 
 }
@@ -30,7 +29,6 @@ ul {
     width: 500px;
     list-style-type: none;
     display: flex;
-
     justify-content: space-evenly;
     padding-inline-start: 0%;
 
