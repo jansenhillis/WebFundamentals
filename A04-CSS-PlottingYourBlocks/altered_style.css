@@ -10,13 +10,14 @@
    #header{
     min-height: 150px;
     background-color: green;
+    margin-bottom: 20px;
    }
 
    #navigation{
     min-height: 300px;
     width: 200px;
     background-color: blue;
-    margin: 20px 20px 0px 0px;
+    margin-right: 20px;
     display: inline-block;
     vertical-align: top;
    }
@@ -24,10 +25,10 @@
    #main_content{
     min-height: 400px;
     width: 710px;
-    margin: 20px 0px 0px 0px;
-    padding: 15px 0px 0px 15px;
+    padding: 15px;
     background-color: red;
     display: inline-block;
+    box-sizing: border-box; 
    }
 
    .subcontents{
@@ -35,12 +36,12 @@
     width: 210px;
     background-color: yellow;
     display: inline-block;
-    margin: 0px 10px 15px 0px;
+    margin-right: 10px;
    }
    
    #advertisement{
     min-height: 120px;
     width: 660px;
     background-color: purple;
-    margin: 10px 0px;
+    margin-top: 30px;
    }
