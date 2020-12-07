@@ -6,6 +6,7 @@ div {
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat';
+    flex-wrap: wrap;
 }
 
 img {
@@ -29,10 +30,10 @@ ul {
     width: 500px;
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: space-evenly;
     padding-inline-start: 0%;
-    flex-wrap: wrap;
+
 }
 
 li a{
