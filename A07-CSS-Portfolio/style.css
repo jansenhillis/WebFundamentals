@@ -41,6 +41,7 @@
     box-sizing: border-box;
 }
 
+
 .about_block h2, .about_block p {
     margin-bottom: 10px;
 }
@@ -53,10 +54,28 @@
     display: inline-block;
     width: 294px;
     margin-top: 20px;
+    vertical-align: top;
 }
 
 .portfolio-column .portfolio-image {
     width: 294px;
+}
+
+.portfolio-column #techstack_logo {
+    width: 55px;
+}   
+
+.callout {
+    background-color: green;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    display: block;
+    width: 75px;
+    margin: 10px auto;
+    color: white;
+    border: 2pt darkgreen solid;
+    box-shadow: 5px 8px 10px rgb(82, 82, 82);
 }
 
 #column-spacer {
