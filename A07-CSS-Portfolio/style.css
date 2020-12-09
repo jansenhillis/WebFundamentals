@@ -16,18 +16,51 @@
     margin: 10px;
 }
 
-.wrapper h2 {
+.wrapper #subheading {
     margin: 10px 10px 10px 420px;
     display: inline-block;
 
 }   
-
 .content {
-    background-color: #fff;
-    display: block;
+    background-color: darkgray;
     padding: 20px;
 }
 .main_image {
-    width: 200px;
+    width: 400px;
     display: inline-block;
 }
+
+.about_block {
+    margin-left: 20px;
+    padding: 8px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: teal;
+    width: 54%;
+    height: 262px;
+    box-sizing: border-box;
+}
+
+.about_block h2, .about_block p {
+    margin-bottom: 10px;
+}
+
+.about_block a {
+    margin-top: 30px;
+} 
+
+.portfolio-column {
+    display: inline-block;
+    width: 294px;
+    margin-top: 20px;
+}
+
+.portfolio-column .portfolio-image {
+    width: 294px;
+}
+
+#column-spacer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
