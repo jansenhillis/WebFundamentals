@@ -1,0 +1,19 @@
+#top {
+    background-color: teal;
+    height: 20px;
+}
+#left {
+    background-color: green;
+    display: inline-block;
+    width: 300px;
+}
+
+#right {
+    background-color: orange;
+    display: inline-block;
+    width: 300px;
+}
+
+p {
+    margin
+}
