@@ -14,7 +14,7 @@
 }
 
 a:visited {
- color: turquoise;
+    color: turquoise;
 }
 
 #header {
@@ -76,7 +76,7 @@ a:visited {
     box-sizing: border-box;
 }
 
-#callout {
+.callout {
     color: rgb(113,114,192);
 }
 
