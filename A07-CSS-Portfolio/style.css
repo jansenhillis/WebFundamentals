@@ -1,68 +1,103 @@
 * {
-    outline: 1px black dotted;
+    /* outline: 1px black dotted; */
     margin: 0;
     padding: 0;
     border: 0;
-    /* outline: 0; */
+    outline: 0;
 }
 .wrapper {
     width: 970px;
-    background-color: lightgray;
+    background-color: rgb(245,245,245);
     margin: 0 auto;
+    font-family: "Arial"
 }
 
 .wrapper h1 {
     display: inline-block;
-    margin: 10px;
+    margin: 10px 10px 10px 20px;
+    font-family: "Comic Sans MS"
 }
 
 .wrapper #subheading {
-    margin: 10px 10px 10px 420px;
+    margin: 10px 10px 10px 335px;
     display: inline-block;
 
 }   
 .content {
-    background-color: darkgray;
+    background-color: rgb(111, 89, 100);
     padding: 20px;
 }
 .main_image {
     width: 400px;
     display: inline-block;
+    border: 4pt lightgray solid;
+    box-sizing: border-box;
 }
 
 .about_block {
     margin-left: 20px;
-    padding: 8px;
     display: inline-block;
     vertical-align: top;
-    background-color: teal;
+    background-color: rgb(231, 221, 230);
     width: 54%;
-    height: 262px;
+    height: 266px;
     box-sizing: border-box;
 }
 
-
-.about_block h2, .about_block p {
+.about_block h2 {
+    color: white;
+    padding: 10px;
     margin-bottom: 10px;
+    background-color: darkgray; /* compatibility for browsers with no gradient*/
+    background-image: linear-gradient(rgb(189, 188, 194), rgb(135, 133, 147), rgb(189, 188, 194));
 }
 
+.about_block p {
+    margin: 10px;
+}
+    
 .about_block a {
-    margin-top: 30px;
+    margin: 30px 0px 0px 10px;
 } 
 
 .portfolio-column {
     display: inline-block;
     width: 294px;
+    height: 600px;
     margin-top: 20px;
     vertical-align: top;
+    background-color: rgb(231, 221, 230); /* compatibility for browsers with no gradient*/
+    background-image: linear-gradient(to right, white, rgb(231, 221, 230));
+}
+
+.portfolio-column h2 {
+    color: white;
+    padding: 10px;
+    background-color: darkgray; /* compatibility for browsers with no gradient*/
+    background-image: linear-gradient(rgb(189, 188, 194), rgb(135, 133, 147), rgb(189, 188, 194));
 }
 
 .portfolio-column .portfolio-image {
     width: 294px;
 }
 
+.portfolio-column p {
+    font-size: 11pt;
+    padding: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.portfolio-column h3 {
+    color: white;
+    padding: 10px;
+    background-color: darkgray; /* compatibility for browsers with no gradient*/
+    background-image: linear-gradient(rgb(189, 188, 194), rgb(135, 133, 147), rgb(189, 188, 194));
+}
+
 .portfolio-column #techstack_logo {
-    width: 55px;
+    padding: 10px 7px 0px 10px;
+    width: 38px;
 }   
 
 .callout {
@@ -79,8 +114,8 @@
 }
 
 #column-spacer {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 19px;
+    margin-right: 19px;
 }
 
 .social_logo {
@@ -89,9 +124,9 @@
     margin-right: 5px;
 }
 
-.wrapper p {
+#contact {
+    padding: 5px;
     text-align: center;
-    margin-top: 5px;
 }
 
 #social {
