@@ -62,6 +62,8 @@
 
 .portfolio-column {
     display: inline-block;
+    /* display: flex; */
+    justify-content: space-between;
     width: 294px;
     height: 600px;
     margin-top: 20px;
