@@ -96,7 +96,7 @@
     background-image: linear-gradient(rgb(189, 188, 194), rgb(135, 133, 147), rgb(189, 188, 194));
 }
 
-.portfolio-column #techstack_logo {
+.portfolio-column .techstack_logo {
     padding: 10px 7px 0px 10px;
     width: 38px;
 }   
