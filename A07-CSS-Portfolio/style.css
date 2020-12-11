@@ -9,13 +9,13 @@
     width: 970px;
     background-color: rgb(245,245,245);
     margin: 0 auto;
-    font-family: "Arial"
+    font-family: "Arial";
 }
 
 .wrapper h1 {
     display: inline-block;
     margin: 10px 10px 10px 20px;
-    font-family: "Comic Sans MS"
+    font-family: "Comic Sans MS";
 }
 
 .wrapper #subheading {
@@ -27,7 +27,8 @@
     background-color: rgb(111, 89, 100);
     padding: 20px;
 }
-.main_image {
+
+#main_image {
     width: 400px;
     display: inline-block;
     border: 4pt lightgray solid;
@@ -82,7 +83,7 @@
 }
 
 .portfolio-column p {
-    font-size: 11pt;
+    font-size: 10.5pt;
     padding: 10px;
     text-align: justify;
     text-justify: inter-word;
@@ -101,19 +102,16 @@
     width: 38px;
 }   
 
-.callout {
+.project-link {
     background-color: green;
     border-radius: 10px;
     padding: 5px;
-    text-align: center;
+    text-align: center; 
     display: block;
-    width: 103px;
-    margin-top:10px;
-    margin-left: auto;
-    margin-right: auto;
     color: white;
     border: 2pt darkgreen solid;
-    box-shadow: 5px 8px 10px rgb(82, 82, 82);
+    box-shadow: 5px 8px 10px rgb(82, 82, 82);   
+    margin: 10px auto;
 }
 
 #column-spacer {
@@ -139,3 +137,4 @@
     justify-content: center;
     margin: 5px auto;
 }
+
