@@ -1,7 +1,6 @@
 // Print odds 1-20
 // Print out all odd numbers from 1 to 20
 // The expected output will be 1, 3, 5, 7, 9, 11, 13, 15, 17, 19
-
 console.log("Print odd 1-20");
 for (var i = 1; i <= 20; i++) {
     if (i % 2 != 0) {
