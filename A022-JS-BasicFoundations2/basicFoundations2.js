@@ -109,20 +109,66 @@ console.log(evensAndOdds([1, 2, 3, 4, 5]));
 
 // Increment the Seconds - Given an array of numbers arr, add 1 to every other element, specifically
 //  those whose index is odd (arr[1], arr[3], arr[5], etc).  Afterward, console.log each array value and return arr.
-
+function incrementSeconds(arr) {
+    for (var num in arr) {
+        if (num % 2 !== 0) { // Every odd index
+            console.log("index: " + num + " incremented [" + arr[num] + "->" + (arr[num]++));
+        }
+    }
+    return arr;
+}
+console.log(incrementSeconds([1, 2, 3, 4, 5, 6, 7]));
 
 // Previous Lengths - You are passed an array (similar to saying 'takes in an array' or 'given an 
 //  array') containing strings.  Working within that same array, replace each string with a number - the 
 //  length of the string at the previous array index - and return the array.  For example, 
 //  previousLengths(["hello", "dojo", "awesome"]) should return ["hello", 5, 4]. Hint: Can for loops only go forward?
+function previousLengths(array) {
+    for (var i = array.length - 1; i >= 0; i--) {
+        console.log("array[" + i + "]: " + array[i]);
+        
+        // if the i === 0, just stop
+        if (i !== 0) {
+            var element = array[i - 1];
+            console.log("length of previous value: " + element.length)
+            array[i] = element.length;
+        }
+    }
+    return array;
+}
+console.log(previousLengths(["hello", "dojo", "awesome"]));
+
 
 // Add Seven - Build a function that accepts an array. Return a new array with all the values 
 //  of the original, but add 7 to each. Do not alter the original array.  Example, addSeven([1,2,3]) 
 //  should return [8,9,10] in a new array.
+function addSevenNewArray(array) {
+    var plusSevenArray = [];
+
+    for (var i in array) {
+        plusSevenArray[i] = array[i] + 7;
+    }
+
+    return plusSevenArray;
+}
+console.log(addSevenNewArray([1, 2, 3]));
 
 // Reverse Array - Given an array, write a function that reverses its values, in-place.  Example: 
 //  reverse([3,1,6,4,2]) returns the same array, but now contains values reversed like so... [2,4,6,1,3].  
 //  Do this without creating an empty temporary array.  (Hint: you'll need to swap values).
+function reverseArrayReplace(array) {
+    var midpoint = (array.length / 2) - 1; 
+
+    for (var i = 0; i <= midpoint; i++) {
+        var temp;
+        temp = array[i];
+        array[i] = array[array.length - 1 - i];
+        array[array.length - 1 - i] = temp;     
+    }
+
+    return array;
+}
+console.log(reverseArrayReplace([1, 2, 3, 4, 5]));
 
 // Outlook: Negative - Given an array, create and return a new one containing all the values of the 
 //  original array, but make them all negative (not simply multiplied by -1). Given [1,-3,5], return [-1,-3,-5].
