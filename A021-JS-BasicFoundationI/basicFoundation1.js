@@ -40,7 +40,6 @@ function sumOddTo5000() {
 }
 console.log(sumOddTo5000());
 
-
 // Iterate an array - Write a function that returns the sum of all the values within an array. (e.g. [1,2,5] returns 8. [-5,2,5,12] returns 14).
 function sumArray(array) { // [NOTE] are arguments automatically initialized? do they require var? or is this loosely typed?
     var sum = 0;
@@ -170,7 +169,6 @@ function swapOuterValues(array) {
     return array;
 }
 console.log(swapOuterValues([1,5,10,-2]));
-
 
 // Number to String - Write a function that takes an array of numbers and replaces any negative values within the array with 
 //  the string 'Dojo'. For example if array = [-1,-3,2], your function will return ['Dojo','Dojo',2].
