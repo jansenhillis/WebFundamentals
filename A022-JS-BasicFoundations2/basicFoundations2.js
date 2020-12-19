@@ -172,13 +172,63 @@ console.log(reverseArrayReplace([1, 2, 3, 4, 5]));
 
 // Outlook: Negative - Given an array, create and return a new one containing all the values of the 
 //  original array, but make them all negative (not simply multiplied by -1). Given [1,-3,5], return [-1,-3,-5].
+function outlookNetative(array) {
+    var allNegative = [];
+
+    for (var i in array) {
+        if (array[i] > 0) {
+            allNegative[i] = array[i] * -1;
+        } else {
+            allNegative[i] = array[i];
+        }
+    }
+    return allNegative;
+}
+console.log(outlookNetative([1, 2, -3, 4, 5]));
 
 // Always Hungry - Create a function that accepts an array, and prints "yummy" each time one of 
 //  the values is equal to "food".  If no array values are "food", then print "I'm hungry" once.
+function alwaysHungry(array) {
+    var response = "I'm hungry";
+
+    for (var i in array) {
+        if (array[i] === "food") {
+            console.log("yummy")
+            response = "";
+        }
+    }
+
+    return response;
+}
+console.log(alwaysHungry([1, "food", 3, "food"]));
 
 // Swap Toward the Center - Given an array, swap the first and last values, third and third-to-last values, 
 //  etc.  Example: swapTowardCenter([true,42,"Ada",2,"pizza"]) turns the array into ["pizza", 42, "Ada", 2, true].  
 //  swapTowardCenter([1,2,3,4,5,6]) turns the array into [6,2,4,3,5,1].  No need to return the array this time.
+function swapTowardCenter(array) {
+    var midpoint = array.length / 2;
+
+    console.log("midpoint: " + midpoint);
+    for (var i = 0; i < midpoint; i++) {
+        if (i % 2 === 0) { // Even index found, swap this, matching end index 
+            console.log(i);
+            var temp = array[i]; 
+            array[i] = array[array.length -1 - i];
+            array[array.length -1 - i] = temp;
+            console.log(array);
+        }
+    }
+    
+    return array;
+}
+console.log(swapTowardCenter([true,42,"Ada",2,"pizza"]));
 
 // Scale the Array - Given an array arr and a number num, multiply all values in the array 
 //  arr by the number num, and return the changed array arr.  For example, scaleArray([1,2,3], 3) should return [3,6,9].
+function scaleArrayReplace(array, numToScale) {
+    for (var i in array) {
+        array[i] = array[i] * numToScale;
+    }
+    return array;
+}
+console.log(scaleArrayReplace([1,2,3,4,5], 4));
