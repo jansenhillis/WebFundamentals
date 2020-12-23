@@ -1,0 +1,45 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    outline: 0px;
+}
+
+.wrapper {
+    width: 900px;
+    /* text-align: center; */
+    margin: 0px auto;
+}
+
+.feature-block {
+    background-color: rgb(241, 241, 241);
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.control {
+    display: inline-block;
+    margin-right: 20px;
+    width: 25%;
+}
+
+.control > h2 {
+    display: block;
+    text-align: right;
+}
+
+.control > button {
+    display: block;
+    padding: 5px;
+    border: 1px black solid;
+    margin-left: auto;  
+}
+
+.feature-block > p {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+}

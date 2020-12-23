@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Basics</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function() {
+            // Initial state setup
+            $('#show > p').hide();
+            $('#slideDown > p').slideUp("slow");
+
+            // Click
+            $('#click > .control > button').click(function(){
+                $('#click > p').fadeToggle();
+            });
+            
+            // .hide()
+            $('#hide > .control > button').click(function(){
+                $('#hide > p').hide();
+            });
+
+
+            $('#show > .control > button').click(function() {
+                $('#show > p').show();
+            });
+
+            $('#toggle > .control > button').click(function() {
+                $('#toggle > p').toggle();
+            });
+            
+            $('#slideDown > .control > button').click(function() {
+                $('#slideDown > p').slideDown("slow");
+            });
+            
+            $('#slideUp > .control > button').click(function() {
+                $('#slideDown > p').slideUp("slow");
+            });
+
+            $('#slideToggle > .control > button').click(function() {
+                $('#slideToggle > p').slideToggle("slow");
+            });
+            
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <p>jQuery Reference Examples</p>
+
+        <div class="feature-block" id="click">
+            <div class="control">
+                <h2>.click()</h2>
+                <button>Click me</button>
+            </div>
+            
+            <p> Click to toggle fading on this paragraph only. 
+            </p>
+        </div>
+
+        <div class="feature-block" id="hide">
+            <div class="control">
+                <h2>.hide() </h2>
+                <button>Hide it</button>
+            </div>
+            
+            <p>Click to hide this paragraph permanently. :(
+            </p>
+        </div>
+
+        <div class="feature-block" id="show">
+            <div class="control">
+                <h2>.show()</h2>
+                <button>Click to Show</button> 
+            </div>
+            
+            <p>I'm now visibile permanently. Thank you!
+            </p>
+        </div>
+
+        <div class="feature-block" id="toggle">
+            <div class="control">
+                <h2>.toggle()</h2>
+                <button>Toggle</button>
+            </div>
+            
+            <p>Toggle me on, toggle me off. Thank you. 
+            </p>
+        </div>
+
+        <div class="feature-block" id="slideDown">
+            <div class="control">
+                <h2>.slideDown()</h2>
+                <button>Slide Down</button>
+            </div>
+            
+            <p>Slide me down?
+            </p>
+        </div>
+
+        <div class="feature-block" id="slideUp">
+            <div class="control">
+                <h2>.slideUp()</h2>
+                <button>Slide Up</button>
+            </div>
+            
+            <p>Slide the other one back up!
+            </p>
+        </div>
+        
+        <div class="feature-block" id="slideToggle">
+            <div class="control">
+                <h2>.slideToggle()</h2>
+                <button>Slide p</button>
+            </div>
+            
+            <p> Slide toggle me!
+            </p>
+        </div>
+
+        <div class="feature-block" id="fadeIn">
+            <div class="control">
+                <h2>.fadeIn()</h2>
+                <button>Fade it In </button>
+            </div>
+            
+            <p>You faded me in. Nice.</p>
+        </div>
+
+        <div class="feature-block" id="fadeOut">
+            <div class="control">
+                <h2>.fadeOut()</h2>
+                <button>Fade it out now</button>
+            </div>
+            
+            <p>Goodbye forever..</p>
+        </div>
+
+        <div class="feature-block" id="addClass">
+            <div class="control">
+                <h2>.addClass()</h2>
+                <button>Add Class</button>
+            </div>
+            
+            <p>Here's a paragraph of text that i will change using a different class defined in CSS. </p>
+        </div>
+
+        <div class="feature-block" id="before">
+            <div class="control">
+                <h2>.before()</h2>
+                <button>Apply jQuery</button>
+            </div>
+            
+            <p>Feature description - mutliparagraph support here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut deleniti suscipit incidunt impedit omnis natus reiciendis possimus odit cupiditate.
+            </p>
+        </div>
+
+        <div class="feature-block" id="after">
+            <div class="control">
+                <h2>.after()</h2>
+                <button>Apply jQuery</button>
+            </div>
+            
+            <p>Feature description - mutliparagraph support here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut deleniti suscipit incidunt impedit omnis natus reiciendis possimus odit cupiditate.
+            </p>
+        </div>
+
+        <div class="feature-block" id="append">
+            <div class="control">
+                <h2>.append()</h2>
+                <button>Apply jQuery</button>
+            </div>
+            
+            <p>Feature description - mutliparagraph support here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut deleniti suscipit incidunt impedit omnis natus reiciendis possimus odit cupiditate.
+            </p>
+        </div>
+
+        <div class="feature-block" id="html">
+            <div class="control">
+                <h2>.html()</h2>
+                <button>Apply jQuery</button>
+            </div>
+            
+            <p>Feature description - mutliparagraph support here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut deleniti suscipit incidunt impedit omnis natus reiciendis possimus odit cupiditate.
+            </p>
+        </div>
+
+        <div class="feature-block" id="attr">
+            <div class="control">
+                <h2>.attr()</h2>
+                <button>Apply jQuery</button>
+            </div>
+            
+            <p>Feature description - mutliparagraph support here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut deleniti suscipit incidunt impedit omnis natus reiciendis possimus odit cupiditate.
+            </p>
+        </div>
+
+        <div class="feature-block" id="val">
+            <div class="control">
+                <h2>.val()</h2>
+                <button>Apply jQuery</button>
+            </div>
+            
+            <p>Feature description - mutliparagraph support here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut deleniti suscipit incidunt impedit omnis natus reiciendis possimus odit cupiditate.
+            </p>
+        </div>
+
+        <div class="feature-block" id="text">
+            <div class="control">
+                <h2>.text()</h2>
+                <button>Apply jQuery</button>
+            </div>
+            
+            <p>Feature description - mutliparagraph support here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut deleniti suscipit incidunt impedit omnis natus reiciendis possimus odit cupiditate.
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
