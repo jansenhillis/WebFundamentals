@@ -11,6 +11,7 @@
             // Initial state setup
             $('#show > p').hide();
             $('#slideDown > p').slideUp("slow");
+            $('#fadeIn > p').fadeOut("slow");
 
             // Click
             $('#click > .control > button').click(function(){
@@ -22,27 +23,85 @@
                 $('#hide > p').hide();
             });
 
-
+            // .show()
             $('#show > .control > button').click(function() {
                 $('#show > p').show();
             });
 
+            // .toggle()
             $('#toggle > .control > button').click(function() {
                 $('#toggle > p').toggle();
             });
             
+            // .slideDown()
             $('#slideDown > .control > button').click(function() {
                 $('#slideDown > p').slideDown("slow");
             });
             
+            // .slideUp()
             $('#slideUp > .control > button').click(function() {
                 $('#slideDown > p').slideUp("slow");
             });
 
+            // .slideToggle()
             $('#slideToggle > .control > button').click(function() {
                 $('#slideToggle > p').slideToggle("slow");
             });
+
+            // .fadeIn()
+            $('#fadeIn > .control > button').click(function() {
+                $('#fadeIn > p').fadeIn("slow");
+            });
             
+            // .fadeOut()
+            $('#fadeOut > .control > button').click(function() {
+                $('#fadeOut > p').fadeOut("slow");
+            });
+
+            // .addClass()
+            $('#addClass > .control > button').click(function() {
+                $('#addClass > p').addClass("selected");
+            });
+
+            // .before()
+            $('#before > .control > button').click(function() {
+                $('#beforeDemo > p').before("<p>Lol, jk. Hello World!</p>");
+            });
+
+            // .after()
+            $('#after > .control > button').click(function() {
+                $('#afterDemo > p').after("<p>Something after, this way comes!</p>");
+            });
+
+            // .append()
+            $('#append > .control > button').click(function() {
+                $('#appendDemo').append("<h3>Appended some HTML! </h3>");
+            });
+
+            // .html()
+            $('#html > .control > button').click(function() {
+                var htmlString = $('#html > .control').html();
+                $('#html > p').append(htmlString);
+            });
+            
+            // .attr()
+            $('#attr > .control > button').click(function() {
+                var text = $('#attr').attr("class");
+                $('#attr > p').append(text);
+            });
+
+            // .val()
+            $('#val > .control > button').click(function() {
+                var text = $('input[type=checkbox][name=checkbox1]:checked').val();
+                $('#val > div > p').append(text);
+            });
+
+            // .text()
+            $('#text > .control > button').click(function() {
+                var text = $('#text').text();
+                console.log(text);
+                $('#textDemo > p').after(text);
+            });
         });
     </script>
 </head>
@@ -150,78 +209,77 @@
         <div class="feature-block" id="before">
             <div class="control">
                 <h2>.before()</h2>
-                <button>Apply jQuery</button>
+                <button>Add before</button>
+            </div>
+            <div id="beforeDemo">
+                <p>This is the only paragraph text here. Nothing else exists. </p>
             </div>
             
-            <p>Feature description - mutliparagraph support here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut deleniti suscipit incidunt impedit omnis natus reiciendis possimus odit cupiditate.
-            </p>
         </div>
 
         <div class="feature-block" id="after">
             <div class="control">
                 <h2>.after()</h2>
-                <button>Apply jQuery</button>
+                <button>Add after</button>
             </div>
             
-            <p>Feature description - mutliparagraph support here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut deleniti suscipit incidunt impedit omnis natus reiciendis possimus odit cupiditate.
-            </p>
+            <div id="afterDemo">
+                <p>This is the only paragraph text here. Nothing else exists. </p>
+            </div>
         </div>
 
         <div class="feature-block" id="append">
             <div class="control">
                 <h2>.append()</h2>
-                <button>Apply jQuery</button>
+                <button>Append away</button>
             </div>
             
-            <p>Feature description - mutliparagraph support here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut deleniti suscipit incidunt impedit omnis natus reiciendis possimus odit cupiditate.
-            </p>
+            <div id="appendDemo">
+                <p>This is the only paragraph text here. Nothing else exists. </p>
+            </div>
         </div>
 
         <div class="feature-block" id="html">
             <div class="control">
                 <h2>.html()</h2>
-                <button>Apply jQuery</button>
+                <button>Click to HTML</button>
             </div>
             
-            <p>Feature description - mutliparagraph support here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut deleniti suscipit incidunt impedit omnis natus reiciendis possimus odit cupiditate.
-            </p>
+            <p>Contents of control will populate.</p>
         </div>
 
         <div class="feature-block" id="attr">
             <div class="control">
                 <h2>.attr()</h2>
-                <button>Apply jQuery</button>
+                <button>Find class Attribute</button>
             </div>
             
-            <p>Feature description - mutliparagraph support here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut deleniti suscipit incidunt impedit omnis natus reiciendis possimus odit cupiditate.
-            </p>
+            <p>The div class attribute is: </p>
         </div>
 
         <div class="feature-block" id="val">
             <div class="control">
                 <h2>.val()</h2>
-                <button>Apply jQuery</button>
+                <button>Click for Value</button>
+            </div>
+        
+            <div id="valDemo">
+                <p>Text from the previous block's p tag: </p>
+                <input type="checkbox" name="checkbox1" value="checkbox1 checked" id="checkbox1">
+                <label for="checkbox1">When you click me, the input's value is appended</label>
             </div>
             
-            <p>Feature description - mutliparagraph support here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut deleniti suscipit incidunt impedit omnis natus reiciendis possimus odit cupiditate.
-            </p>
         </div>
 
         <div class="feature-block" id="text">
             <div class="control">
                 <h2>.text()</h2>
-                <button>Apply jQuery</button>
+                <button>Append element texts</button>
             </div>
             
-            <p>Feature description - mutliparagraph support here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, temporibus.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ut deleniti suscipit incidunt impedit omnis natus reiciendis possimus odit cupiditate.
-            </p>
+            <div id="textDemo">
+                <p>Text appears here:</p>
+            </div>
         </div>
 
     </div>
