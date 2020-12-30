@@ -1,0 +1,16 @@
+.wrapper {
+    margin: 10px auto;
+    text-align: center;
+    width: 850px;
+}
+
+#image-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 200px;
+    margin: 3px;
+}
