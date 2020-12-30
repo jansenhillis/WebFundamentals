@@ -1,0 +1,11 @@
+.wrapper {
+    margin: 0px auto;
+    width: 1000px;
+    border: 1px black solid;
+}
+
+img {
+    display: block; 
+    width: 400px;
+    margin: 10px auto;
+}
