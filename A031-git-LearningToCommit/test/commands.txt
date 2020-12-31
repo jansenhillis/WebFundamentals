@@ -1,0 +1,32 @@
+  136  mkdir test
+  137  cd test
+  138  touch index.html
+  139  touch styles.css
+  140  git init
+  141  lls
+  142  ll
+  143  ls -la
+  144  git status
+  145  git add .
+  146  git status
+  147  git commit -m "initial commit"
+  148  ll
+  149  vim index.html 
+  150  git status
+  151  git add index.html 
+  152  git commit -m "update html"
+  153  vim styles.css 
+  154  git commit -m "update css"
+  155  git status
+  156  git add styles.css 
+  157  git commit -m "update css"
+  158  git log
+  159  git log -n 2 -vvvv
+  160  git log -n 2 -v
+  161  git revert 35c430d
+  162  git status
+  163  vim styles.css 
+  164  git status
+  165  git add styles.css 
+  166  git commit -m "update css again"
+  167  history > commands.txt
