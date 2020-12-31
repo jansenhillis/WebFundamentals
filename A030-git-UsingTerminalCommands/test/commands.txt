@@ -1,0 +1,37 @@
+   68  git
+   69  mkdir test
+   70  cd test
+   71  touch index.html
+   72  touch style.css
+   73  touch commands.txt
+   74  ll
+   75  cp index.html index2.html
+   76  ll
+   77  cd ..
+   78  mkdir destination
+   79  ll
+   80  cd test
+   81  ll
+   82  mv index2.html ../destination/index2.html
+   83  ll
+   84  cd ../des
+   85  cd ../destination/
+   86  ll
+   87  cd ../test/
+   88  ll
+   89  rm style.css 
+   90  ll
+   91  cd ..
+   92  ll
+   93  rm destination/
+   94  rm -rf destination/
+   95  ll
+   96  cd test/
+   97  ll
+   98  rm commands.txt 
+   99  ll
+  100  li
+  101  hi
+  102  history
+  103  history | commands.txt
+  104  history > commands.txt
